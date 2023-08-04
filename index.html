@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Basics</title>
+</head>
+<body>
+
+    <div class="content">
+        <h1 id="app">{{ message }}</h1>
+        <p class="paragraph">{{ messageParagraph }}</p>
+    </div>
+    
+</body>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+
+    Vue.createApp({
+        data() {
+        return {
+            message: 'Goodmorning Vue!',
+            messageParagraph: 'This is a simple test.'
+        }
+        }
+    }).mount('.content')
+
+</script>
+
+
+</html>
