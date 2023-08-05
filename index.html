@@ -17,7 +17,11 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li v-for="eroe in eroi" class="nav-item">
-                <a class="nav-link active" aria-current="page" v-bind:href="eroe.url">{{ eroe.name }}</a>
+                <a class="nav-link active" 
+                   aria-current="page" 
+                   v-bind:href="eroe.url"
+                   v-bind:title="`This is the title of ${eroe.name}`"
+                >{{ eroe.name }}</a>
               </li>
             </ul>
           </div>
